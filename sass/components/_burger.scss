@@ -23,6 +23,8 @@
   width: 100vw;
   height: 100vh;
   background-color: $first-color;
+  /* animate mobile container */
+  transition: transform 0.25s;
   .container {
     position: relative;
     display: flex;
@@ -123,6 +125,14 @@
 
     &__item:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .mobile {
+    .social__link {
+      font-size: 12px;
     }
   }
 }

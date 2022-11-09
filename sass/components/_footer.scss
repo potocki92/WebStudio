@@ -118,7 +118,9 @@
 /* if media resolution has 480px or smaller then form__input has a calc */
 @media screen and (max-width: 480px) {
   .footer {
-    height: 100vh;;
+    display: flex;
+    align-items: center;
+    height: 100vh;
   }
   .newsletter {
     .form__input {
