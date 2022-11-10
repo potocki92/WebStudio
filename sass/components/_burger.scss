@@ -1,3 +1,4 @@
+
 .burger {
   visibility: visible;
   position: absolute;
@@ -8,7 +9,6 @@
   border: none;
   background-color: transparent;
   outline: none;
-
   @include anim__transition(fill, inherit);
 
   &:hover,
@@ -17,6 +17,8 @@
     @include anim__transition(fill, $second-color);
   }
 }
+
+/**/
 .mobile {
   position: fixed;
   top: 0;
@@ -129,7 +131,7 @@
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .mobile {
     .social__link {
       font-size: 12px;

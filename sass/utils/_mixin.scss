@@ -109,3 +109,8 @@
   transition: #{$first-property} $time $anim-cubic,
     #{$second-property} $time $anim-cubic, #{$third-property} $time $anim-cubic;
 }
+
+@mixin burger_translate3D($transform_x, $transform_y, $transform_z, $rotate) {
+  transform: translate3d($transform_x, $transform_y, $transform_z)
+    rotate($rotate);
+}

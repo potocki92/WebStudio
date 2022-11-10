@@ -13,6 +13,7 @@
 
   // function to add 'is-hidden' class to mobile
   function toggleModal() {
-   mobileMenu.classList.toggle("is-hidden");
+    mobileMenu.classList.toggle("is-hidden");
+    openMenu.classList.toggle("burger");
   }
 })();

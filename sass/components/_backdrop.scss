@@ -12,7 +12,8 @@
 =============================================*/
 .is-hidden {
   pointer-events: none;
-  transform: translateX(100%);
+  /* show container from top to bottom */
+  transform: translateY(-100%);
 }
 
 /* BACKDROP CONTAINER 
