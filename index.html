@@ -21,7 +21,7 @@
 
   <body>
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="header">
       <!-- start container with position -->
       <div class="header__links container">
         <!-- start logo -->
@@ -51,7 +51,7 @@
               >
             </li>
             <li class="navigation__item item">
-              <a class="navigation__link link" href="#" id="contact">Kontakt</a>
+              <a class="navigation__link link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -77,11 +77,14 @@
         </div>
         <!-- end contact container -->
         <!-- start burger icon -->
-        <div class="burger__icon mobile-open">
+
+        <!-- span burger with animation -->
+        <!-- <div class="burger__icon mobile-open">
           <span class="burger__span"></span>
           <span class="burger__span"></span>
           <span class="burger__span"></span>
-        </div>
+        </div> -->
+
         <button class="burger mobile-open">
           <svg class="burger__svg" width="40px" height="40px">
             <use href="./images/svg/icons.svg#burger__before"></use>
@@ -622,14 +625,14 @@
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container section">
         <div class="footer__box">
           <!-- container with logo + contact -->
           <div class="footer__info">
             <!-- logo -->
             <div class="logo">
-              <a href="./index.html" class="logo__link link"
+              <a href="#header" class="logo__link link"
                 ><span class="logo__web">Web</span>Studio</a
               >
             </div>
@@ -860,7 +863,7 @@
             <li class="navigation__item item">
               <a
                 class="navigation__link link active__link"
-                href="./index.html"
+                href="#header"
                 id="agency"
                 >Agencja</a
               >
@@ -874,7 +877,7 @@
               >
             </li>
             <li class="navigation__item item">
-              <a class="navigation__link link" href="#" id="contact">Kontakt</a>
+              <a class="navigation__link link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>

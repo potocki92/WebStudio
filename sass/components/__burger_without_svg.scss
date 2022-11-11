@@ -12,7 +12,7 @@
   /* container with burger */
   display: flex;
   padding: 8px;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   flex-direction: column;
@@ -30,6 +30,7 @@
   position: relative;
   width: 100%;
   margin-top: -2px;
+  transition: 0.25s cubic-bezier(0.6, 0, 0.3, 1);
 }
 
 .burger__span + .burger__span {
