@@ -1,45 +1,44 @@
 // to filter projects from portfolio.html
 
+/* 
+  default selection all projects 
+  show all projects
+*/
 filterSelection("all");
-function filterSelection(e) {
-  var x, i;
-  x = document.getElementsByClassName("projects__item");
-  if (e == "all") e = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(e) > -1) w3AddClass(x[i], "show");
+
+/* funtion to remove or add "show" class to projects__item */
+function filterSelection(element) {
+  var projects, index;
+  projects = document.getElementsByClassName("projects__item");
+
+  if (element == "all") element = "";
+  for (index = 0; index < projects.length; index++) {
+    removeClass(projects[index], "show");
+    if (projects[index].className.indexOf(element) > -1)
+      addClass(projects[index], "show");
   }
 }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+/* remove class [name] from "projects__item"  */
+function removeClass(element, name) {
+  var index, first__array, second__array;
+  first__array = element.className.split(" ");
+  second__array = name.split(" ");
+  for (index = 0; index < second__array.length; index++) {
+    while (first__array.indexOf(second__array[index]) > -1) {
+      first__array.splice(first__array.indexOf(second__array[index]), 1);
     }
   }
+  element.className = first__array.join(" ");
 }
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+/* added class [name] from "projects__item" */
+function addClass(element, name) {
+  var index, first__array, second__array;
+  first__array = element.className.split(" ");
+  second__array = name.split(" ");
+  for (index = 0; index < second__array.length; index++) {
+    if (first__array.indexOf(second__array[index]) == -1) {
+      element.className += " " + second__array[index];
     }
   }
-  element.className = arr1.join(" ");
-}
-
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("filters__button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
 }
