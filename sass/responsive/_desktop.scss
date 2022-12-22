@@ -94,9 +94,17 @@
     /* positioning feature container and feature box */
     &.section {
       padding-bottom: 0;
-    }   
+    }
+    &__item {
+      width: calc((100% - 90px) / 4);
+    }
   }
-
+  .team {
+      &__item {
+        width: calc((100% - 90px) / 4);
+      }
+    
+  }
   .about {
     /* show only when resolution is minimum 1200px width */
     visibility: visible;
