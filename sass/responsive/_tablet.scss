@@ -9,17 +9,18 @@
 =====================================
 */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
-  // .container {
-  //   max-width: 768px;
-  // }
+  .container {
+    max-width: 768px;
+  }
   /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
 ============================================= */
   .team__item {
     width: calc((100% - 30px) / 2);
   }
+
   .container__image {
     max-width: 768px;
   }
