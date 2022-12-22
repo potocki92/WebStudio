@@ -67,6 +67,7 @@
     background-size: cover;
     padding: 200px 0;
     top: 0;
+    min-width: 1600px;
     &__title {
       @include text_value(44px, 1.4, $first-letter-spacing, 900);
     }
@@ -100,10 +101,9 @@
     }
   }
   .team {
-      &__item {
-        width: calc((100% - 90px) / 4);
-      }
-    
+    &__item {
+      width: calc((100% - 90px) / 4);
+    }
   }
   .about {
     /* show only when resolution is minimum 1200px width */
