@@ -94,7 +94,7 @@
     /* positioning feature container and feature box */
     &.section {
       padding-bottom: 0;
-    }
+    }   
   }
 
   .about {
@@ -160,9 +160,9 @@
   }
   /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
-  .container {
-    max-width: 1200px;
-  }
+  // .container {
+  //   max-width: 1200px;
+  // }
   /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
 ============================================= */
   .container__image {

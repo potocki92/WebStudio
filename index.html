@@ -62,7 +62,9 @@
             <li class="contact__item item">
               <a class="contact__link link" href="mailto:info@devstudio.com"
                 ><svg class="contact__svg" width="16px" height="12px">
-                  <use xlink:href="./images/svg/icons.svg#icon-envelope"></use></svg
+                  <use
+                    xlink:href="./images/svg/icons.svg#icon-envelope"
+                  ></use></svg
                 >info@devstudio.com</a
               >
             </li>
@@ -221,6 +223,7 @@
               <picture class="team__image">
                 <!-- 1200px -->
                 <source
+                  class="image"
                   srcset="
                     ./images/main_page/team/desktop/image_product_designer.jpg           1x,
                     ./images/main_page/team/desktop/retina/image_product_designer@2x.jpg 2x
@@ -231,6 +234,7 @@
                 />
                 <!-- 768px -->
                 <source
+                  class="image"
                   srcset="
                     ./images/main_page/team/tablet/image_product_designer-768.jpg           1x,
                     ./images/main_page/team/tablet/retina/image_product_designer-768@2x.jpg 2x
@@ -241,6 +245,7 @@
                 />
                 <!-- 480px -->
                 <img
+                  class="image"
                   srcset="
                     ./images/main_page/team/mobile/image_product_designer-480.jpg           1x,
                     ./images/main_page/team/mobile/retina/image_product_designer-480@2x.jpg 2x
@@ -312,6 +317,7 @@
               <picture class="team__image">
                 <!-- 1200px -->
                 <source
+                  class="image"
                   srcset="
                     ./images/main_page/team/desktop/image_frontend_developer.jpg           1x,
                     ./images/main_page/team/desktop/retina/image_frontend_developer@2x.jpg 2x
@@ -322,6 +328,7 @@
                 />
                 <!-- 768px -->
                 <source
+                  class="image"
                   srcset="
                     ./images/main_page/team/tablet/image_frontend_developer-768.jpg           1x,
                     ./images/main_page/team/tablet/retina/image_frontend_developer-768@2x.jpg 2x
@@ -332,6 +339,7 @@
                 />
                 <!-- 480px -->
                 <img
+                  class="image"
                   srcset="
                     ./images/main_page/team/mobile/image_frontend_developer-480.jpg           1x,
                     ./images/main_page/team/mobile/retina/image_frontend_developer-480@2x.jpg 2x
@@ -402,7 +410,7 @@
             <li class="team__item item">
               <picture class="team__image">
                 <!-- 1200px -->
-                <source
+                <source class="image"
                   srcset="
                     ./images/main_page/team/desktop/image_marketing.jpg           1x,
                     ./images/main_page/team/desktop/retina/image_marketing@2x.jpg 2x
@@ -412,7 +420,7 @@
                   height="260"
                 />
                 <!-- 768px -->
-                <source
+                <source class="image"
                   srcset="
                     ./images/main_page/team/tablet/image_marketing-768.jpg           1x,
                     ./images/main_page/team/tablet/retina/image_marketing-768@2x.jpg 2x
@@ -422,7 +430,7 @@
                   height="374"
                 />
                 <!-- 480px -->
-                <img
+                <img class="image"
                   srcset="
                     ./images/main_page/team/mobile/image_marketing-480.jpg           1x,
                     ./images/main_page/team/mobile/retina/image_marketing-480@2x.jpg 2x
@@ -493,7 +501,7 @@
             <li class="team__item item">
               <picture class="team__image">
                 <!-- 1200px -->
-                <source
+                <source class="image"
                   srcset="
                     ./images/main_page/team/desktop/image_ui_designer.jpg           1x,
                     ./images/main_page/team/desktop/retina/image_ui_designer@2x.jpg 2x
@@ -503,7 +511,7 @@
                   height="260"
                 />
                 <!-- 768px -->
-                <source
+                <source class="image"
                   srcset="
                     ./images/main_page/team/tablet/image_ui_designer-768.jpg           1x,
                     ./images/main_page/team/tablet/retina/image_ui_designer-768@2x.jpg 2x
@@ -513,7 +521,7 @@
                   height="374"
                 />
                 <!-- 480px -->
-                <img
+                <img class="image"
                   srcset="
                     ./images/main_page/team/mobile/image_ui_designer-480.jpg           1x,
                     ./images/main_page/team/mobile/retina/image_ui_designer-480@2x.jpg 2x
@@ -755,10 +763,7 @@
       <div class="modal">
         <button class="modal__button" type="button" data-modal-close>
           <svg class="modal__svg" width="11" height="11">
-            <use
-              class="modal__icon"
-              href="./images/svg/icons.svg#modal"
-            ></use>
+            <use class="modal__icon" href="./images/svg/icons.svg#modal"></use>
           </svg>
         </button>
         <!-- start form container -->

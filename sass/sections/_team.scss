@@ -12,15 +12,32 @@
   main team container
   it has all the tags with the team and heading
 */
+.image {
+  width: 100%;
+  height: auto;
+}
 .team {
   background: $fourth-color;
-
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__list {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   &__item {
     /* team card with image, team name and team profession */
-    
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: $first-color;
     /* shadow under the containers with a photo, 
     name and profession of the team */

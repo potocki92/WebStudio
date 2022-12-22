@@ -9,14 +9,17 @@
 =====================================
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   /* CONTAINER (CENTERING AND WIDTH)
 ============================================= */
-  .container {
-    max-width: 768px;
-  }
+  // .container {
+  //   max-width: 768px;
+  // }
   /* CONTAINER WITH MAX-WIDTH IMAGE FROM MAIN PAGE (CENTERING AND WIDTH)
 ============================================= */
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
   .container__image {
     max-width: 768px;
   }
@@ -136,7 +139,7 @@
 
   .feature {
     /* positioning feature container and feature box */
-    align-items: center;
+
     &.section {
       padding-bottom: 45px;
     }
@@ -146,7 +149,8 @@
     }
     &__item {
       /* flexing feature box with icon, text and description */
-      width: 100vw;
+
+      width: calc((100% - 30px) / 2);
     }
   }
 }
