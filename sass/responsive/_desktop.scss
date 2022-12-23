@@ -67,7 +67,7 @@
     background-size: cover;
     padding: 200px 0;
     top: 0;
-    min-width: 1600px;
+    max-width: 1600px;
     &__title {
       @include text_value(44px, 1.4, $first-letter-spacing, 900);
     }
@@ -118,7 +118,7 @@
     /* tags with customers boxes */
     &__item {
       /* item with customer icons */
-      width: 170px;
+      width: calc((100% - 150px) / 6);
     }
   }
 

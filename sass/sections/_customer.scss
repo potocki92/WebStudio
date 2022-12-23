@@ -13,16 +13,21 @@
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
   }
   &__item {
     /* item with customer icons */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    width: calc((100% - 30px) / 1);
     height: 92px;
+    display: flex;
     border-radius: $radius;
     @include second_anim_transition(color, #afb1b8, border, 1px solid #afb1b8);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       /*

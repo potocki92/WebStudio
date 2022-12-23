@@ -134,7 +134,7 @@
     /* tags with customers boxes */
     &__item {
       /* item with customer icons */
-      width: 226px;
+      width: calc((100% - 30px) / 3);
     }
   }
 
