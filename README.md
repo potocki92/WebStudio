@@ -6,7 +6,7 @@ This website was created using the BEM (Block-Element-Modifier) methodology and 
 
 - HTML
 - CSS (SASS)
-- JavaScript (optional)
+- JavaScript
 
 ## Description
 
